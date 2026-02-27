@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Algorithm Visualizer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2 style="text-align: center">
+      ALGORITHM VISUALIZER (SORTING / SEARCHING )
+    </h2>
+    <button onclick="generateArray()">Generate</button>
+    <button onclick="bubbleSort()">Bubble Sort</button>
+    <button onclick="mergeSort()">Merge Sort</button>
+    <button onclick="quickSort()">Quick Sort</button>
+    <input type="number" id="target" placeholder="Search value" />
+    <button onclick="binarySearch()">Binary Search</button>
+    <input type="number" id="linearTarget" placeholder="Search value" />
+    <button onclick="linearSearch()">Linear Search</button>
+
+    <label>Speed</label>
+    <input type="range" min="50" max="500" value="200" id="speed" />
+    <button id="themeToggle">🌙 Dark</button>
+    <div id="array"></div>
+    <div id="steps">Steps: 0</div>
+    <script src="app.js"></script>
+  </body>
+</html>
